@@ -4,7 +4,7 @@ import axios from "axios";
 export async function PUT(req: NextRequest) {
   try {
     const { id, ...userData } = await req.json();
-    const apiUrl = `http://localhost:3000/usuarios/${id}`;
+    const apiUrl = `https://greenlife-back.vercel.app/usuarios/${id}`;
 
     const response = await axios.put(apiUrl, userData);
 

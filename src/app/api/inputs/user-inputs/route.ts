@@ -11,7 +11,7 @@ export async function GET(request: Request) {
 
   try {
     const { data } = await axios.get(
-      `http://localhost:3000/usuarios/atividades/${id}`
+      `https://greenlife-back.vercel.app/usuarios/atividades/${id}`
     );
 
     return NextResponse.json({ message: "user inputs found", data });

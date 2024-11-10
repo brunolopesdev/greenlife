@@ -12,7 +12,7 @@ export const authOptions: NextAuthOptions = {
       },
       async authorize(credentials) {
         try {
-          const response = await axios.post("http://localhost:3000/login", {
+          const response = await axios.post("https://greenlife-back.vercel.app/login", {
             email: credentials?.email,
             password: credentials?.password,
           });

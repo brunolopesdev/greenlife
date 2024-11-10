@@ -11,7 +11,7 @@ export async function PUT(request: Request) {
 
   try {
     const { data } = await axios.put(
-      `http://localhost:3000/usuarios/${id}`);
+      `https://greenlife-back.vercel.app/usuarios/${id}`);
 
     return NextResponse.json({ message: "Orders found", data });
   } catch (error: any) {

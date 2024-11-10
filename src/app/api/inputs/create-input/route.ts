@@ -2,7 +2,7 @@ import axios from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
-  const apiUrl = `http://localhost:3000/atividades-esg`;
+  const apiUrl = `https://greenlife-back.vercel.app/atividades-esg`;
 
   try {
     const data = await req.json();
